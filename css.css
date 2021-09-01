@@ -1,0 +1,939 @@
+html{
+  scroll-behavior:smooth;
+}/*كان لازم السموز علشان السؤقخمم يمشى براحة */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f5;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.cont {
+    width:1200px;
+    margin:auto;
+}
+/*navbarrrr*/
+.nav {
+    background-color:#00000000;
+    position:fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    overflow:hidden;
+    width: 100%;
+    transition:all 1s ease;
+}
+.nav h3 {
+    float: left;
+    padding: 24px 30px 30px 0px;
+    font-size: 33px;
+    color: #fff;
+}
+.nav ul {
+    list-style: none;
+    padding-left: 0;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    right: -72px;
+
+}
+.nav ul li {
+    float: left;
+    padding: 31px 27px 24px 0px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+.nav ul li.colp{
+    color:#0078ff;
+}
+.nav ul li.activ::before {
+    content: '';
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    transition: all 1s ease;
+    background: #0078ff;
+    margin-bottom: 20px;
+    transform-style:preserve-3d;
+    display: block;
+    margin-top:4px;
+     animation:newslland 1s 1;
+}
+.nav ul li:hover::before {
+    content: '';
+    color: #fff;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    transition: all 500ms ease;
+    background: #0078ff;
+    margin-bottom: 20px;
+    transform-style:preserve-3d;
+    display: block;
+    margin-top:4px;
+    transition: all 1s ease;
+    animation:newslland 1s 1;
+    transform-style:preserve-3d;
+}
+@keyframes newslland {
+    0%  {width:0px}
+    100% {width:35px}
+}
+.nav.active {
+    background-color: #ffffff;
+    height: 82px;
+}
+ 
+/*navbarrrr*/
+
+/*sliderrrr*/
+.slider {
+    background-image:url(img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height:650px;
+    position:relative;
+}
+.slider h1 {
+    position: absolute;
+    left: 250px;
+    top: 242px;
+    font-size: 70px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.slider .newone {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.slider .insido h3:first-child {
+    left: 44%;
+    width: 111px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    top: 400px;
+    transition: width 1s ease;
+    transform-style: preserve-3d;
+    animation: allisgood 1s;
+    animation-iteration-count: 1;
+}
+@keyframes allisgood {
+    0% {width:20px}
+    100% {width:111px}
+}
+.slider h3:last-child {
+    left: 46%;
+    width: 111px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    top: 400px;
+}
+/*sliderrrr*/
+
+/*about*/
+.about {
+   background-color: #fff;
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 0px 0px 12px -7px;
+    border: 1px solid #ddd;
+}
+.about .para {
+    float:left;
+    width:50%
+}
+.about .para h3 {
+    font-size: 30px;
+    color: #343434;
+    font-family: sans-serif;
+    padding-top: 40px;
+}
+.about .para h3::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    background:#0078ff;
+    display: block;
+    margin-top: 7px;
+    
+}
+.about .para p {
+    margin-top: 70px;
+    padding: 10px 56px 10px 0px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.about .picture {
+    float:left;
+    width:50%;
+    overflow:hidden;
+    padding-top: 40px;
+}
+.about .picture .img {
+    float:left;
+    width:30%;
+}
+.about .picture .pppp {
+    float:left;
+    width:50%;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.about .picture .pppp p {
+    padding-bottom: 10px;
+}
+.about .picture .pppp p span {
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.about .picture .skllis {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+} 
+.about .picture .skllis h4 {
+    margin-top: 40px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.about .picture .skllis .has {
+    overflow: hidden;
+    padding-top: 35px;
+}
+.about .picture .skllis .has .he {
+    float: left;
+    width: 90%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    cursor:pointer;
+}
+.about .picture .skllis .has .he p:first-child span {
+    float:right
+}
+
+
+.about .picture .skllis .has .he .in {
+    height: 14px;
+    background: #ddd;
+    margin-top: 10px;
+}
+.about .picture .skllis .has .he .in span {
+    float: left; 
+    background: #0078ff5c;
+    display: block;
+    height: 14px;
+}
+.about .picture .skllis .has .he:nth-child(1) .in span{
+    width:85%
+}
+.about .picture .skllis .has .he:nth-child(1):hover .in span {
+    animation:allover 1s 1;
+    transform-style:preserve-3d;
+    
+}
+@keyframes allover {
+    0% {width:0%}
+    100% {width:85%}
+    
+}
+
+.about .picture .skllis .has .he:nth-child(2) .in span{
+    width:90%
+}
+.about .picture .skllis .has .he:nth-child(2):hover .in span {
+    animation:allover2 1s 1;
+    transform-style:preserve-3d;
+}
+@keyframes allover2 {
+    0% {width:0%}
+    100% {width:90%}
+    
+}
+
+.about .picture .skllis .has .he:nth-child(3) .in span{
+    width:60%
+}
+.about .picture .skllis .has .he:nth-child(3):hover .in span {
+    animation:allover3 1s 1;
+    transform-style:preserve-3d;
+}
+@keyframes allover3 {
+    0% {width:0%}
+    100% {width:60%}
+    
+}
+
+.about .picture .skllis .has .he:nth-child(4) .in span{
+    width:75%
+}
+.about .picture .skllis .has .he:nth-child(4):hover .in span {
+    animation:allover4 1s 1;
+    transform-style:preserve-3d;
+}
+@keyframes allover4 {
+    0% {width:0%}
+    100% {width:75%}
+    
+}/*يا سيىدى الشكلة كانت ان انت لازم ترتب بس ان انت هاتاخد الديف الى اسمه هييي الاول بعد كده هاتقوله لما اعمله هافر عليها السبان الى جوا البي الى الكلاس بتاعها ان هاتعمله كده بس يا سيديى*/
+/*يا سيىدى الشكلة كانت ان انت لازم ترتب بس ان انت هاتاخد الديف الى اسمه هييي الاول بعد كده هاتقوله لما اعمله هافر عليها السبان الى جوا البي الى الكلاس بتاعها ان هاتعمله كده بس يا سيديى*/
+/*يا سيىدى الشكلة كانت ان انت لازم ترتب بس ان انت هاتاخد الديف الى اسمه هييي الاول بعد كده هاتقوله لما اعمله هافر عليها السبان الى جوا البي الى الكلاس بتاعها ان هاتعمله كده بس يا سيديى*/
+/*about*/
+
+/*services*/
+.services {
+    overflow:hidden;
+    margin-top:60px;
+}
+.services .align {
+    text-align:center;
+}
+.services .align h1 {
+    font-size: 54px;
+    color: #321313d6;
+    margin-bottom: 15px;
+}
+.services .align p {
+    color: #4e4e4e;
+    font-size: 20px;
+}
+.services .align p::after {
+    content: "";
+    width: 57px;
+    height: 6px;
+    background-color: #0078ffe3;
+    margin-top: 13px;
+    text-align: center;
+    position: absolute;
+    left: 640px;
+    top: 1526px;
+}
+
+.services .theser {
+    overflow:hidden;
+    margin-top:100px
+}
+.services .theser .all{
+    float: left;
+    width: 29.3333%;
+    margin-left: 45px;
+} 
+.services .theser .all .iconcont{
+    border-radius: 13px;
+    background: #fff;
+    padding: 27px 20px 40px 20px;
+    margin-bottom: 23px;
+    text-align: center;
+    line-height: 26px;
+}
+.services .theser .all .iconcont .icon1 {
+    margin-bottom: 37px;
+}
+.services .theser .all .iconcont .icon1 .icon2 li {
+    list-style: none;
+    
+} 
+.services .theser .all:first-child .iconcont .icon1 .icon2 li img {
+    width:53%;
+}
+.services .theser .all .iconcont .icon1 .icon2 {
+   border-radius: 60%;
+    box-shadow: 0 0 0 10px #a46bd4;
+    transition: all 1s ease;
+    margin: 0 auto;
+    padding-top: 14px;
+    cursor: pointer;
+    width: 34%;
+    height: 90px;
+    display: block;
+
+}
+.services .theser .all .iconcont .icon1 .icon2:hover {
+    background: #ca75e7;
+     box-shadow: 0 0 0 10px #ede6f3;
+}
+.services .theser .all .iconcont .content h3{
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 24px;
+}
+/*services*/
+
+/*count*/
+.color {
+    background-image: url(img/k4.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 500px;
+    margin-top: 55px;
+}
+.color button {
+    background: #5857e796;
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    border: none;
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 13px;
+    left: 42%;
+    bottom: 34px;
+    cursor: pointer;
+}
+.color .background {
+    background-color: #483ec2a8;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.color .mego {
+    top: 151px;
+    overflow: hidden;
+    position: relative;
+}
+.color .mego  .count{
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+.color .mego  .count .container1{
+    margin-bottom: 30px;
+    padding-top: 12px;
+    cursor: pointer;
+    
+}
+.color .mego  .count .container1:hover .container2{
+   background-color:#8b5eff
+
+}
+.color .mego  .count .container1 .container2 {
+    border-radius: 100%;
+    box-shadow: 0 0 0 6px #a298eb85;
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    line-height: 37px;
+    transition: background 1s ease;
+}
+.color .mego  .count .container1 .container2 img{
+    opacity: 1;
+    width: 60%;
+    padding: 12px 0px 4px 0px;
+}
+.color .mego  .count:last-child .container1 .container2 img{
+    opacity: 1;
+    width:60%;
+    padding:12px 0px 4px 0px
+}
+.color .mego  .count h4{
+    font-weight: 200;
+    font-size: 34px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-family: cursive;
+} 
+.color .mego  .count p {
+    color: #fff;
+    font-size: 24px;
+}
+/*count*/
+
+/*PORTFOLIO*/
+.portfolio {
+    overflow:hidden;
+    margin-top:100px;
+}
+.portfolio .hh11 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.portfolio .hh11 h1{
+   color: #653b3b;
+    font-size: 48px;
+    margin-bottom: 19px;
+}
+.portfolio .hh11 p::after{
+    content: "";
+    width: 57px;
+    height: 6px;
+    background-color: #0078ffe3;
+    text-align: center;
+    position: absolute;
+    margin-lefT: -226px;
+    margin-top: 39px;
+}
+
+.portfolio .thebiger {
+    overflow:hidden;
+}
+.portfolio .thebiger .thenum11 {
+    max-width: 29.333333%;
+    float: left;
+    margin-left: 40px;
+}
+.portfolio .thebiger .thenum11 .thenum22 {
+    background-color:#fff;
+    margin-bottom:46px
+} 
+.portfolio .thebiger .thenum11 .thenum22 .theicon11 .theicon22 img {
+    max-width: 100%;
+    transition:all 2s ease;
+}
+
+
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 {
+    padding: 2rem 3% 1rem 3%;
+    overflow:hidden;
+}
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theh4 {
+    float: left;
+}
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theh4 h4 {
+    color: #672d2d;
+    font-size: 20px;
+    font-weight: 600;
+}
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theh4 p span {
+    color: #825dc0f5;
+    padding-right: 10px;
+    transition: all .5s ease;
+    text-transform: capitalize;
+}
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theh4 p span:hover {
+    color:#000;
+    text-decoration:underline;
+    cursor:pointer
+}
+
+
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theblus {
+    float: right;
+    margin-top:20px;
+}
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theblus span::after{
+   font-size: 21px;
+    content: "+";
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 0 2px #4eafd6;
+}
+.portfolio .thebiger .thenum11 .thenum22 .theblush4 .theblus:hover{
+    background:#ebbcf7;
+    border-radius: 100%;
+    cursor:pointer;
+    transition: all .7s ease;
+}
+/*PORTFOLIO*/
+
+/*test*/
+.test {
+    overflow: hidden;
+    margin-top: 6rem;
+    height: 500px;
+    text-align: center;
+    background-image: url(img/slide04.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color:#fff
+}
+.test .bekeng {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#4c5ad2ad;
+}
+.test .inside1 {
+    position: absolute;
+    left: 298px;
+    top: 100px;
+    opacity: 0;
+    display: none;
+   
+}
+.test .inside1.display {
+    opacity: 1;
+    display: block;
+    transition: all 1s ease;
+    animation:naroto 1s 1;
+    transform-style: preserve-3d;
+}
+@keyframes naroto {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+.test .inside1 .img {
+      margin-bottom: 20px;   
+}
+.test .inside1 .img img {
+    border-radius: 50%;
+    width: 133px;
+}
+.test .inside1 h2 {
+     margin-bottom: 20px;   
+}
+.test .inside1 p {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.test .controle {
+    top: 402px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    left: 545px;
+}
+.test .controle ul {
+    padding-left:0;
+    overflow:hidden;
+}
+.test .controle ul li {
+    font-size: 22px;
+    border-radius: 100%;
+    list-style: none;
+    float: left;
+    width: 35px;
+    height: 34px;
+    background-color: #c7c7d682;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.test .controle ul li.display {
+    color:#fff;
+    background-color:#5d7878;
+}
+/*test*/
+
+/*blog*/
+.blog {
+    margin-top:74px;
+}
+.blog .head{
+    text-align: center;
+    margin-bottom: 65px;
+}
+.blog .head h1 {
+    color: #653b3b;
+    font-size: 48px;
+    margin-bottom: 19px;
+}
+.blog .head p::after {
+    content: "";
+    width: 57px;
+    height: 6px;
+    background-color: #0078ffe3;
+    text-align: center;
+    position: absolute;
+    margin-lefT: -226px;
+    margin-top: 39px;
+}
+
+.blog .blogicons {
+    overflow:hidden;
+}
+.blog .blogicons .blogin {
+    float: left;
+    width: 30.33333%;
+    background-color: #fff;
+    margin-left: 35px;
+   position: relative;
+    border-radius: 10px;
+}
+.blog .blogicons .blogin .img img {
+    width:100%;
+}
+.blog .blogicons .blogin .span {
+    background-color: #7475df;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    bottom: 220px;
+    left: 39%;
+    border-radius: 9px;
+    text-transform: capitalize;
+    color: #fff;
+    transition:all 1s ease;
+    cursor:pointer;
+}
+.blog .blogicons .blogin:nth-child(2) .span{
+    left: 30%;
+}
+.blog .blogicons .blogin:nth-child(3) .span{
+    left: 33%;
+}
+.blog .blogicons .blogin .span:hover {
+    background-color:#9899c2;
+}
+
+.blog .blogicons .blogin .h4pspan{
+    margin-top: 36px;
+}
+.blog .blogicons .blogin .h4pspan h4 {
+    color: #653b3b;
+    font-size: 20px;
+    padding-left: 16px;
+}
+.blog .blogicons .blogin .h4pspan p {
+     padding: 18px;
+    line-height: 22px;
+}
+.blog .blogicons .blogin .h4pspan .fott {
+    overflow: hidden;
+    margin-top: 13px;
+    background-color: #fde3e3;
+    border-top: 1px solid #dfcbcb;
+    color: #937b7b;
+    height: 52px;
+}
+.blog .blogicons .blogin .h4pspan .fott .parag {
+    float:left;
+    width:60%;
+}
+.blog .blogicons .blogin .h4pspan .fott .time {
+    float:right;
+    width:40%;
+}
+/*blog*/
+
+/*fotter*/
+.fotter {
+    overflow: hidden;
+    margin-top: 6rem;
+    height: 900px;
+    background-image: url(img/k4.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.fotter .backcolor {
+    background-color: #6056db9c;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.fotter span {
+    position: absolute;
+    text-align: center;
+    top: 790px;
+    left: 450px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:30px
+}
+.fotter .contact{
+    margin-top: 110px;
+    width: 1200px;
+    background-color: #fdf1f1;
+    height: 630px;
+    position: absolute;
+    overflow: hidden;
+    padding: 45px;
+    border-radius: 10px;
+}
+.fotter .contact .send {
+    float:left;
+    width:50%
+}
+.fotter .contact .send h1 {
+    color: #613838;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.fotter .contact .send h1::after{
+    content: "";
+    width: 115px;
+    height: 3px;
+    background-color: #0078ffe3;
+    text-align: center;
+    position: absolute;
+    margin-left: -170px;
+    margin-top: 59px;
+}
+.fotter .contact .send input {
+    padding: 11px;
+    width: 93%;
+    border-radius: 6px;
+    border: 1px solid #59707036;
+    display: block;
+    margin-bottom: 28px;
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.fotter .contact .send textarea {
+    padding: 10px;
+    width: 93%;
+    border: 1px solid #dfc5c5d4;
+    border-radius: 7px;
+}
+.fotter .contact .send button {
+    background-color: #928feb;
+    color: #fff;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #dfc8c8;
+    border-radius: 12px;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition:all 1s ease;
+    cursor:pointer;
+    margin-top: 20px;
+}
+.fotter .contact .send button:hover {
+    background-color:#6460d4;
+    box-shadow:0 0 0 3px #ddd
+}
+
+.fotter .contact .get {
+    float:left;
+    width:50%
+}
+.fotter .contact .get h1 {
+    color: #613838;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.fotter .contact .get h1::after {
+    content: "";
+    width: 115px;
+    height: 3px;
+    background-color: #0078ffe3;
+    text-align: center;
+    position: absolute;
+    margin-left: -199px;
+    margin-top: 59px;
+}
+.fotter .contact .get >p {
+    line-height: 33px;
+    font-size: 21px;
+    color: #705050;
+}
+
+.fotter .contact .get .iconspara {
+    overflow: hidden;
+    margin-top: 15px;
+}
+.fotter .contact .get .iconspara .icons {
+    float: left;
+}
+.fotter .contact .get .iconspara .icons .img {
+    margin-top: 10px;
+    width: 40%;
+}
+.fotter .contact .get .iconspara .icons .img img  {
+    width:100%
+}
+.fotter .contact .get .iconspara .para{
+   float: left;
+    margin-left: -21px;
+}
+.fotter .contact .get .iconspara .para p {
+    margin-top:17px
+}
+
+.fotter .contact .get .pitures {
+    overflow: hidden;
+    margin-top: -6px;
+    margin-left: 0px;
+}
+.fotter .contact .get .pitures .hav  {
+    margin-right: -85px;
+    float: left;
+    width: 28%;
+    padding: 20px;
+}
+.fotter .contact .get .pitures .hav .pict {
+    padding: 9px;
+    box-shadow: 0 0 0 4px #3642bf9c;
+    border-radius: 100%;
+    width: 38%;
+    transition:all 1s ease;
+    cursor:pointer;
+}
+.fotter .contact .get .pitures .hav .pict:hover {
+    box-shadow: 0 0 0 4px #ddd;
+    background-color:#3642bf9c;
+}
+.fotter .contact .get .pitures .hav img {
+  width: 108%
+}
+.fotter a {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background: #4b3ee3e3;
+    position: fixed;
+    padding-top: 14px;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 100%;
+    font-weight: bolder;
+    transition:background 2s ease;
+    animation:newback 2s 1;
+    transform-style:preserve-3d;
+}
+.fotter a.not {
+   display: none;
+}
+@keyframes newback {
+    0% {
+        opacity: .5
+    }
+    100% {
+        opacity: 1
+    }
+}
+.fotter a li {
+    list-style: none;
+}
+/*fotter*/
+
+
+
+
+
+
+
+
